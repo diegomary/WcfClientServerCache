@@ -29,7 +29,7 @@ namespace WCFClientApp
 
             using (serviceClassClient = new ServiceClassClient("NetTcpBinding_IServiceClass"))
             {
-                NetworkCredential ntc = new NetworkCredential("Maria", "Unicorno@98");
+                NetworkCredential ntc = new NetworkCredential("wcf_service_user", "wcf_service_user");
                 serviceClassClient.ClientCredentials.Windows.ClientCredential = ntc;
              //   serviceClassClient.ClientCredentials.Windows.ClientCredential = CredentialCache.DefaultNetworkCredentials;
                 // Create a new Guid to pass by reference
@@ -56,7 +56,7 @@ namespace WCFClientApp
         {
             using (serviceClassClient = new ServiceClassClient("NetTcpBinding_IServiceClass"))
             {
-                NetworkCredential ntc = new NetworkCredential("Maria", "Unicorno@98");
+                NetworkCredential ntc = new NetworkCredential("wcf_service_user", "wcf_service_user");
                 serviceClassClient.ClientCredentials.Windows.ClientCredential = ntc;
                 Customer customer = new Customer();
                 customer.Address = txtAddress.Text;
@@ -79,7 +79,7 @@ namespace WCFClientApp
         {
             using (serviceClassClient = new ServiceClassClient("NetTcpBinding_IServiceClass"))
             {
-                NetworkCredential ntc = new NetworkCredential("Maria", "Unicorno@98");
+                NetworkCredential ntc = new NetworkCredential("wcf_service_user", "wcf_service_user");
                 serviceClassClient.ClientCredentials.Windows.ClientCredential = ntc;
                 // We read the Cache Dictionary now
                 IEntityHistoryReader reader = new EntityHistoryReader();
