@@ -19,10 +19,10 @@ namespace TestForLoadAndStress
         [TestMethod]
         public void TestGetCustomerForReal()
         {
-
+            NetworkCredential ntc = new NetworkCredential("wcf_user", ".DiEgo62AndMAry19998");
             using (ServiceClassClient serviceClassClient = new ServiceClassClient("NetTcpBinding_IServiceClass"))
-            {
-                NetworkCredential ntc = new NetworkCredential("wcf_user", ".DiEgo62AndMAry19998");           
+            {               
+                serviceClassClient.ClientCredentials.Windows.ClientCredential = ntc;
                 Guid instanceServerGui = new Guid();
                 Customer customer = serviceClassClient.GetCustomer(ref instanceServerGui);             
                 serviceClassClient.Close();
