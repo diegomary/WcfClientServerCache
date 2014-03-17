@@ -10,6 +10,7 @@ namespace WCFServiceHost.Notification
     public interface INotifyService
     {
         void NotifyMedia();
+        void NotifyNumberOfGets();
         Customer GetCustomer();
     }
 }

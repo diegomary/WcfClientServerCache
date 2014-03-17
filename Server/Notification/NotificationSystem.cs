@@ -24,6 +24,15 @@ namespace WCFServiceHost.Notification
             iservice.NotifyMedia();
         }
 
+        public void NotifyGets()
+        {
+            if (iservice == null)
+            {
+                throw new InvalidOperationException("Null value passed");
+            }
+            iservice.NotifyNumberOfGets();
+        }
+
         public Customer RescueCustomer()
         {
             if (iservice == null)

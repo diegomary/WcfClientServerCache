@@ -24,7 +24,14 @@ namespace WCFServiceHost.Notification
             WCFServiceHost.Program.starter.txtCompanyName.Text = _customer.CompanyName;
             WCFServiceHost.Program.starter.txtContactName.Text = _customer.ContactName;
             WCFServiceHost.Program.starter.txtGuid.Text = _guid;
+           
         }
+
+        public void NotifyNumberOfGets()
+        {           
+            WCFServiceHost.Program.starter.txtNumCalls.Text = (Convert.ToInt32(WCFServiceHost.Program.starter.txtNumCalls.Text) + 1).ToString();
+        }
+
         public Customer GetCustomer()
         {
             Customer customer = new Customer

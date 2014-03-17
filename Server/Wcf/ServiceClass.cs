@@ -34,6 +34,9 @@ namespace WCFServiceHost.Wcf
             EntityHistory entityhistory= entityhistoryreader.LoadEntityHistory();
             KeyValuePair<string, Guid> customerpair = entityhistory.FirstOrDefault(m => m.Key.Contains("Customer"));
             lastUpdate = customerpair.Value;
+            INotifyService inotservice = new NotifyForm();
+            NotificationSystem ns = new NotificationSystem(inotservice);
+            ns.NotifyGets();
             ICustomerReader reader = new CustomerReader();
             return reader.LoadCustomer();           
         }

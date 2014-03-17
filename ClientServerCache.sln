@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWorkBench", "TestWorkBench\TestWorkBench.csproj", "{386D85ED-DB0D-424F-BA0D-AEBD222C8957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForLoadAndStress", "TestForLoadAndStress\TestForLoadAndStress.csproj", "{843A858A-FABD-41F5-84BE-B6CF0984F370}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{386D85ED-DB0D-424F-BA0D-AEBD222C8957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{386D85ED-DB0D-424F-BA0D-AEBD222C8957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{386D85ED-DB0D-424F-BA0D-AEBD222C8957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843A858A-FABD-41F5-84BE-B6CF0984F370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843A858A-FABD-41F5-84BE-B6CF0984F370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843A858A-FABD-41F5-84BE-B6CF0984F370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843A858A-FABD-41F5-84BE-B6CF0984F370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
